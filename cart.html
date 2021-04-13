@@ -1,0 +1,737 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
+    <script src="https://code.jquery.com/jquery-2.2.4.js" charset="utf-8"></script>
+    <meta name="robots" content="noindex,follow" />
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap" rel="stylesheet">
+
+    <title>Shopping Cart</title>
+  </head>
+  <body onload="checkLocalStorage()">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+              <a class="navbar-brand" href="#">GROCERY</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><i class="fas fa-bars" style="color:black;"></i></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                        <a class="nav-link parent-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link parent-link" href="aboutus.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                                <a class="nav-link parent-link" href="shop.html">Shop</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                                <a class="nav-link parent-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">More</a>
+                                <div class="dropdown-menu">
+                                <a class="dropdown-item child-link" href="whatweoffer.html">What We Offer</a>
+                                <a class="dropdown-item child-link" href="ourteam.html">Our Team</a>
+                                <a class="dropdown-item child-link" href="testimonials.html">Testimonials</a>
+                        </li>
+                        <li class="nav-item">
+                                <a class="nav-link parent-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item shoppingcart">
+                                <a class="nav-link parent-link" href="cart.html"><i class="fas fa-shopping-cart"></i><span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+          </div>
+        </nav>
+
+        <!-- main starts here -->
+        <main role="main">
+
+        <!-- page title -->
+        <section id="aboutus">
+        	<h1 align="center">SHOPPING CART</h1>
+          <!-- <button onclick="checkLocalStorage()">Check</button> -->
+		    </section>
+
+        <!-- Shopping cart -->
+    <div class="shopping-cart">
+      <div class="container">
+        <!-- An item -->
+      <div id="carrot" class="item">
+        <div class="buttons">
+          <span id="del-carrot" class="delete-btn"></span>
+          <span class="like-btn"></span>
+        </div>
+
+        <div class="image">
+          <img src="./images/products/1.png" alt="" />
+        </div>
+
+        <div class="description">
+          <span id="pname">Carrot</span>
+          <span id="originalprice">$<span id="number">17.00</span></span>
+        </div>
+
+        <div class="quantity">
+          <button class="plus-btn" type="button" name="button">
+            <img src="./images/cart/plus.svg" alt="" />
+          </button>
+          <input type="text" name="name" value="1">
+          <button class="minus-btn" type="button" name="button">
+            <img src="./images/cart/minus.svg" alt="" />
+          </button>
+        </div>
+
+        <div class="total-price">$<span id="price">17.00</span></div>
+      </div>
+
+      <!-- An item -->
+      <div id="potatoes" class="item">
+        <div class="buttons">
+          <span id="del-potatoes" class="delete-btn"></span>
+          <span class="like-btn"></span>
+        </div>
+
+        <div class="image"> 
+          <img src="./images/products/2.png" alt=""/>
+        </div>
+
+        <div class="description">
+          <span id="pname">Potatoes</span>
+          <span id="originalprice">$<span id="number">13.00</span></span>
+        </div>
+
+        <div class="quantity">
+          <button class="plus-btn" type="button" name="button">
+            <img src="./images/cart/plus.svg" alt="" />
+          </button>
+          <input type="text" name="name" value="1">
+          <button class="minus-btn" type="button" name="button">
+            <img src="./images/cart/minus.svg" alt="" />
+          </button>
+        </div>
+
+        <div class="total-price">$<span id="price">13.00</span></div>
+      </div>
+
+      <!-- An item -->
+      <div id="peppers" class="item">
+        <div class="buttons">
+          <span id="del-peppers" class="delete-btn"></span>
+          <span class="like-btn"></span>
+        </div>
+
+        <div class="image">
+          <img src="./images/products/3.png" alt="" />
+        </div>
+
+        <div class="description">
+          <span id="pname">Peppers</span>
+          <span id="originalprice">$<span id="number">14.00</span></span>
+        </div>
+
+        <div class="quantity">
+          <button class="plus-btn" type="button" name="button">
+            <img src="./images/cart/plus.svg" alt="" />
+          </button>
+          <input type="text" name="name" value="1">
+          <button class="minus-btn" type="button" name="button">
+            <img src="./images/cart/minus.svg" alt="" />
+          </button>
+        </div>
+
+        <div class="total-price">$<span id="price">14.00</span></div>
+      </div>
+
+      <!-- An item -->
+    <div id="bananas" class="item">
+        <div class="buttons">
+          <span  id="del-bananas" class="delete-btn"></span>
+          <span class="like-btn"></span>
+        </div>
+
+        <div class="image">
+          <img src="./images/products/4.png" alt="" />
+        </div>
+
+        <div class="description">
+          <span id="pname">Bananas</span>
+          <span id="originalprice">$<span id="number">11.00</span></span>
+        </div>
+
+        <div class="quantity">
+          <button class="plus-btn" type="button" name="button">
+            <img src="./images/cart/plus.svg" alt="" />
+          </button>
+          <input type="text" name="name" value="1">
+          <button class="minus-btn" type="button" name="button">
+            <img src="./images/cart/minus.svg" alt="" />
+          </button>
+        </div>
+
+        <div class="total-price">$<span id="price">11.00</span></div>
+      </div>
+   
+      <!-- An item -->
+    <div id="cucumbers" class="item">
+        <div class="buttons">
+          <span id="del-cucumbers" class="delete-btn"></span>
+          <span class="like-btn"></span>
+        </div>
+
+        <div class="image">
+          <img src="./images/products/5.png" alt="" />
+        </div>
+
+        <div class="description">
+          <span id="pname">Cucumbers</span>
+          <span id="originalprice">$<span id="number">22.00</span></span>
+        </div>
+
+        <div class="quantity">
+          <button class="plus-btn" type="button" name="button">
+            <img src="./images/cart/plus.svg" alt="" />
+          </button>
+          <input type="text" name="name" value="1">
+          <button class="minus-btn" type="button" name="button">
+            <img src="./images/cart/minus.svg" alt="" />
+          </button>
+        </div>
+
+        <div class="total-price">$<span id="price">22.00</span></div>
+      </div>
+   
+      <!-- An item -->
+    <div id="strawberries" class="item">
+        <div class="buttons">
+          <span id="del-strawberries" class="delete-btn"></span>
+          <span class="like-btn"></span>
+        </div>
+
+        <div class="image">
+          <img src="./images/products/6.png" alt="" />
+        </div>
+
+        <div class="description">
+          <span id="pname">Strawberries</span>
+          <span id="originalprice">$<span id="number">15.00</span></span>
+        </div>
+
+        <div class="quantity">
+          <button class="plus-btn" type="button" name="button">
+            <img src="./images/cart/plus.svg" alt="" />
+          </button>
+          <input type="text" name="name" value="1">
+          <button class="minus-btn" type="button" name="button">
+            <img src="./images/cart/minus.svg" alt="" />
+          </button>
+        </div>
+
+        <div class="total-price">$<span id="price">15.00</span></div>
+      </div>
+   
+      <!-- An item -->
+    <div id="bagels" class="item">
+        <div class="buttons">
+          <span id="del-bagels" class="delete-btn"></span>
+          <span class="like-btn"></span>
+        </div>
+
+        <div class="image">
+          <img src="./images/products/7.png" alt="" />
+        </div>
+
+        <div class="description">
+          <span id="pname">Bagels</span>
+          <span id="originalprice">$<span id="number">23.00</span></span>
+        </div>
+
+        <div class="quantity">
+          <button class="plus-btn" type="button" name="button">
+            <img src="./images/cart/plus.svg" alt="" />
+          </button>
+          <input type="text" name="name" value="1">
+          <button class="minus-btn" type="button" name="button">
+            <img src="./images/cart/minus.svg" alt="" />
+          </button>
+        </div>
+
+        <div class="total-price">$<span id="price">23.00</span></div>
+      </div>
+    
+      <!-- An item -->
+    <div id="bread" class="item">
+        <div class="buttons">
+          <span id="del-bread" class="delete-btn"></span>
+          <span class="like-btn"></span>
+        </div>
+
+        <div class="image">
+          <img src="./images/products/8.png" alt="" />
+        </div>
+
+        <div class="description">
+          <span id="pname">Bread</span>
+          <span id="originalprice">$<span id="number">11.00</span></span>
+        </div>
+
+        <div class="quantity">
+          <button class="plus-btn" type="button" name="button">
+            <img src="./images/cart/plus.svg" alt="" />
+          </button>
+          <input type="text" name="name" value="1">
+          <button class="minus-btn" type="button" name="button">
+            <img src="./images/cart/minus.svg" alt="" />
+          </button>
+        </div>
+        <div class="total-price">$<span id="price">11.00</span></div>
+      </div>
+
+      <!-- An item -->
+      <div id="cheese" class="item">
+        <div class="buttons">
+          <span id="del-cheese" class="delete-btn"></span>
+          <span class="like-btn"></span>
+        </div>
+
+        <div class="image">
+          <img src="./images/shop/2.jpeg" alt="" />
+        </div>
+
+        <div class="description">
+          <span id="pname">Cheese</span>
+          <span id="originalprice">$<span id="number">13.00</span></span>
+        </div>
+
+        <div class="quantity">
+          <button class="plus-btn" type="button" name="button">
+            <img src="./images/cart/plus.svg" alt="" />
+          </button>
+          <input type="text" name="name" value="1">
+          <button class="minus-btn" type="button" name="button">
+            <img src="./images/cart/minus.svg" alt="" />
+          </button>
+        </div>
+
+        <div class="total-price">$<span id="price">13.00</span></div>
+      </div>
+
+      <!-- An item -->
+        <div id="pomogranate" class="item">
+        <div class="buttons">
+          <span id="del-pomogranate" class="delete-btn"></span>
+          <span class="like-btn"></span>
+        </div>
+
+        <div class="image">
+          <img src="./images/shop/3.jpg" alt="" />
+        </div>
+
+        <div class="description">
+          <span id="pname">Pomogranate</span>
+          <span id="originalprice">$<span id="number">14.00</span></span>
+        </div>
+
+        <div class="quantity">
+          <button class="plus-btn" type="button" name="button">
+            <img src="./images/cart/plus.svg" alt="" />
+          </button>
+          <input type="text" name="name" value="1">
+          <button class="minus-btn" type="button" name="button">
+            <img src="./images/cart/minus.svg" alt="" />
+          </button>
+        </div>
+
+        <div class="total-price">$<span id="price">14.00</span></div>
+      </div>
+    </div>
+
+    </div>
+
+    <!-- Order now Form -->
+    <section id="order-now">
+      <!-- Heading -->
+      <h2 align="center">User Details</h2>
+      <div class="container">
+        <div id="user-details">
+            <form>
+              <div class="form-group">
+                <label for="uname">Name: </label>
+                <input type="text" class="form-control" id="uname" required>
+              </div>  
+              <div class="form-group">
+                <label for="uphone">Phone Number: </label>
+                <input type="tel" class="form-control" id="uphone" required>
+              </div>             
+              <div class="form-group">
+                <label for="u">Address: </label>
+                <textarea class="form-control" id="uaddress" rows="3" required></textarea>
+              </div>
+            </form>
+        </div>
+        <a id="a-whatsapp" class="btn btn-success btn-lg">Order Now</a>
+        <!-- <button id="btn-order"">Order</button> -->
+      </div>
+    </section>
+
+    <!-- Our partners -->
+    <section id="partners">
+        <h2 align="center">Our partners</h2>
+        <div class="container"> 
+            <div class="row">         
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 hidden">
+                    <img class="img-fluid" src="./images/partners/1.png">
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 hidden">
+                    <img class="img-fluid" src="./images/partners/2.png">
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 hidden">
+                    <img class="img-fluid" src="./images/partners/3.png">
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 hidden">
+                    <img class="img-fluid" src="./images/partners/4.png">
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 hidden">
+                    <img class="img-fluid" src="./images/partners/5.png">
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 hidden">
+                    <img class="img-fluid" src="./images/partners/6.png">
+                </div>
+            </div>
+        </div>
+    </section> 
+
+    <!-- main ends here -->              
+     </main>
+
+     <!-- Footer -->
+        <footer class="footer">
+          <div class="footer-container">
+            <div>
+              <span class="text-muted">&copy E-Store 2020</span>
+            </div>
+            <div class="social-media text"> Follow us @ -
+                <a href="#"><i class="fab fa-twitter"></i></a>   
+                <a href="#"><i class="fab fa-instagram"></i></a>   
+                <a href="#"><i class="fab fa-linkedin"></i></a> 
+            </div>
+            <div>
+              <p class="text-muted"> Store Address:</p>
+              <span class="text-muted">123 Bootstrap Lane, Mumbai, MH - 412345 India</span>
+              <p class="text-muted">Contact - +91 99999 99999 </p>
+            </div>
+          </div>
+        </footer>
+ 
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+     <script>            
+            (function() {
+                    var elements;
+                    var windowHeight;
+
+                    //functions for animations
+                    function init() {
+                        elements = document.querySelectorAll('.hidden');
+                        windowHeight = window.innerHeight;
+                    }
+
+                    function checkPosition() {
+                        for (var i = 0; i < elements.length; i++) {
+                        var element = elements[i];
+                        var positionFromTop = elements[i].getBoundingClientRect().top;
+
+                        if (positionFromTop - windowHeight <= 0) {
+                            element.classList.add('fade-in-element');       
+                            element.classList.remove('hidden');                
+                        }
+                        }
+                    }
+                    
+                    window.addEventListener('scroll', checkPosition);
+                    window.addEventListener('resize', init);
+
+                    init();
+                    checkPosition();
+                    })();
+
+                    //Making minus button decrease quantity & change total price accordingly
+                    $('.minus-btn').on('click', function(e) {
+                            var $this = $(this);
+                            var $input = $this.closest('div').find('input');
+                            var value = parseInt($input.val());
+
+                            if (value > 1) {
+                                value = value - 1;
+                            } else {
+                                value = 0;
+                            }
+
+                            $input.val(value);
+
+                            var ctr = $(this).parent().parent().children('.description').children('#originalprice').children('#number').text();
+                            var price = value * ctr;
+                            $(this).parent().parent().children('.total-price').children('#price').text(price.toFixed(2));
+
+                        });
+
+                        //Making plus button increase quantity & change total price accordingly
+                        $('.plus-btn').on('click', function(e) {
+                            var $this = $(this);
+                            var $input = $this.closest('div').find('input');
+                            var value = parseInt($input.val());
+
+                            if (value < 100) {
+                            value = value + 1;
+                            } else {
+                                value =100;
+                            }
+
+                            $input.val(value);
+                            var ctr = $(this).parent().parent().children('.description').children('#originalprice').children('#number').text();
+                            var price = value * ctr;
+                            $(this).parent().parent().children('.total-price').children('#price').text(price.toFixed(2));
+                        });
+
+                        //to like the item
+                      $('.like-btn').on('click', function() {
+                        $(this).toggleClass('is-active');
+                      });
+                        // Remove the item from the localstorage
+                        $('.delete-btn').on("click", function(){
+                          if($(this).attr('id') === "del-carrot"){
+                            localStorage.removeItem("Carrot");
+                          }if($(this).attr('id') === "del-potatoes"){
+                            localStorage.removeItem("Potatoes");
+                          }if($(this).attr('id') === "del-peppers"){
+                            localStorage.removeItem("Peppers");
+                          }if($(this).attr('id') === "del-bananas"){
+                            localStorage.removeItem("Bananas");
+                          }if($(this).attr('id') === "del-cucumbers"){
+                            localStorage.removeItem("Cucumbers");
+                          }if($(this).attr('id') === "del-strawberries"){
+                            localStorage.removeItem("Strawberries");
+                          }if($(this).attr('id') === "del-bagels"){
+                            localStorage.removeItem("Bagels");
+                          }if($(this).attr('id') === "del-bread"){
+                            localStorage.removeItem("Bread");
+                          }if($(this).attr('id') === "del-pomogranate"){
+                            localStorage.removeItem("Pomogranate");
+                          }if($(this).attr('id') === "del-cheese"){
+                            localStorage.removeItem("Cheese");
+                          }
+                           $(this).parent().parent().remove();
+                        });
+                      
+                       for(var i=0; i<10; i++){
+                          $('.item')[i].style.display = "none";
+                      }
+                      //Hide the user details form until there's any item in the cart
+                      document.getElementById("order-now").style.display="none";
+
+                      //Show the product if it is added in the cart
+                    function checkLocalStorage(){      
+                      let element;                 
+                       if(localStorage.getItem("Carrot")){ 
+                                                 
+                         element = document.getElementById("carrot");
+                         element.style.display="flex";
+                         element.classList.add("visible");                        
+                         document.getElementById("order-now").style.display="block";
+                         
+                       }if(localStorage.getItem("Potatoes")){
+                         element = document.getElementById("potatoes");
+                         element.style.display="flex";
+                         element.classList.add("visible");
+                         document.getElementById("order-now").style.display="block";
+
+                        }if(localStorage.getItem("Peppers")){                                             
+                         element = document.getElementById("peppers");
+                         element.style.display="flex";
+                         element.classList.add("visible");
+                         document.getElementById("order-now").style.display="block";
+
+                        } if(localStorage.getItem("Bananas")){                      
+                         element = document.getElementById("bananas");
+                         element.style.display="flex";
+                         element.classList.add("visible");
+                         document.getElementById("order-now").style.display="block";
+
+                        }if(localStorage.getItem("Cucumbers")){                           
+                         element = document.getElementById("cucumbers");
+                         element.style.display="flex";
+                         element.classList.add("visible");
+                         document.getElementById("order-now").style.display="block";
+
+                        }if(localStorage.getItem("Strawberries")){
+                         element = document.getElementById("strawberries");
+                         element.style.display="flex";
+                         element.classList.add("visible");
+                         document.getElementById("order-now").style.display="block";
+
+                        }if(localStorage.getItem("Bagels")){
+                         element = document.getElementById("bagels");
+                         element.style.display="flex";
+                         element.classList.add("visible");
+                         document.getElementById("order-now").style.display="block";
+
+                        }if(localStorage.getItem("Bread")){                         
+                         element = document.getElementById("bread");
+                         element.style.display="flex";
+                         element.classList.add("visible");
+                         document.getElementById("order-now").style.display="block";
+
+                        }if(localStorage.getItem("Pomogranate")){                           
+                         element = document.getElementById("pomogranate");
+                         element.style.display="flex";
+                         element.classList.add("visible");
+                         document.getElementById("order-now").style.display="block";
+
+                        }if(localStorage.getItem("Cheese")){
+                         element = document.getElementById("cheese");
+                         element.style.display="flex";
+                         element.classList.add("visible");
+                         document.getElementById("order-now").style.display="block";
+                        }             
+                    }
+                    // WhatsApp integration functionality
+                    const aWhatsapp = document.getElementById("a-whatsapp");  
+                    aWhatsapp.onclick = function(){
+                      //Create a message template
+                    let message = "Hello, I have an order message for you - ";
+                    let userName = document.getElementById("uname").value;                    
+                    let userAddress = document.getElementById("uaddress").value;                   
+                    let userPhone = document.getElementById("uphone").value;
+
+                    //Logic for creating a message from the cart info - 
+                    //Get all elements which are visible
+
+                    var pname0 = $(".visible").eq(0).children(".description").children("#pname").text();
+                    var pname1 = $(".visible").eq(1).children(".description").children("#pname").text();
+                    var pname2 = $(".visible").eq(2).children(".description").children("#pname").text();
+                    var pname3 = $(".visible").eq(3).children(".description").children("#pname").text();
+                    var pname4 = $(".visible").eq(4).children(".description").children("#pname").text();
+                    var pname5 = $(".visible").eq(5).children(".description").children("#pname").text();
+                    var pname6 = $(".visible").eq(6).children(".description").children("#pname").text();
+                    var pname7 = $(".visible").eq(7).children(".description").children("#pname").text();
+                  
+                    var pquantity0 = $(".visible").eq(0).children(".quantity").children("input").val();
+                    var pquantity1 = $(".visible").eq(1).children(".quantity").children("input").val();
+                    var pquantity2 = $(".visible").eq(2).children(".quantity").children("input").val();
+                    var pquantity3 = $(".visible").eq(3).children(".quantity").children("input").val();
+                    var pquantity4 = $(".visible").eq(4).children(".quantity").children("input").val();
+                    var pquantity5 = $(".visible").eq(5).children(".quantity").children("input").val();
+                    var pquantity6 = $(".visible").eq(6).children(".quantity").children("input").val();
+                    var pquantity7 = $(".visible").eq(7).children(".quantity").children("input").val();
+
+                    var pprice0 = $(".visible").eq(0).children(".total-price").text();
+                    var pprice1 = $(".visible").eq(1).children(".total-price").text();
+                    var pprice2 = $(".visible").eq(2).children(".total-price").text();
+                    var pprice3 = $(".visible").eq(3).children(".total-price").text();
+                    var pprice4 = $(".visible").eq(4).children(".total-price").text();
+                    var pprice5 = $(".visible").eq(5).children(".total-price").text();
+                    var pprice6 = $(".visible").eq(6).children(".total-price").text();
+                    var pprice7 = $(".visible").eq(7).children(".total-price").text();
+
+                    //creating a message
+                    if(pquantity0 == undefined){
+                      var cartItems = "";
+                    }
+
+                    if(pquantity1 == undefined){
+                      var cartItems = pname0 + " of " + pquantity0 + "kgs " + " with a total price of " + pprice0;
+                    }
+
+                    else if(pquantity2 == undefined){
+                      var cartItems = pname0 + " of " + pquantity0 + "kgs with a total price of " + pprice0 + ", " + pname1 + " of " + pquantity1 + "kgs with a total price of " + pprice1;
+                    }
+
+                    else if(pquantity3 == undefined){
+                      var cartItems = pname0 + " of " + pquantity0 + "kgs with a total price of " + pprice0 + ", " + pname1 + " of " + pquantity1 + "kgs with a total price of " + pprice1 + ", " + pname2 + " of " + pquantity2 + "kgs with a total price of " + pprice2;
+                    }
+
+                    else if(pquantity4 == undefined){
+                      var cartItems = pname0 + " of " + pquantity0 + "kgs with a total price of " + pprice0 + ", " + pname1 + " of " + pquantity1 + "kgs with a total price of " + pprice1 + ", " + pname2 + " of " + pquantity2 + "kgs with a total price of " + pprice2 + ", " + pname3 + " of " + pquantity3 + "kgs with a total price of " + pprice3;
+                    }
+
+                    else if(pquantity5 == undefined){
+                      var cartItems = pname0 + " of " + pquantity0 + "kgs with a total price of " + pprice0 + ", " + pname1 + " of " + pquantity1 + "kgs with a total price of " + pprice1 + ", " + pname2 + " of " + pquantity2 + "kgs with a total price of " + pprice2 + ", " + pname3 + " of " + pquantity3 + "kgs with a total price of " + pprice3 + ", " + pname4 + " of " + pquantity4 + "kgs with a total price of " + pprice4;
+                    }
+
+                    else if(pquantity6 == undefined){
+                      var cartItems = pname0 + " of " + pquantity0 + "kgs with a total price of " + pprice0 + ", " + pname1 + " of " + pquantity1 + "kgs with a total price of " + pprice1 + ", " + pname2 + " of " + pquantity2 + "kgs with a total price of " + pprice2 + ", " + pname3 + " of " + pquantity3 + "kgs with a total price of " + pprice3 + ", " + pname4 + " of " + pquantity4 + "kgs with a total price of " + pprice4 + ", " + pname5 + " of " + pquantity5 + "kgs with a total price of " + pprice5;
+                    }
+
+                    else if(pquantity7 == undefined){
+                      var cartItems = pname0 + " of " + pquantity0 + "kgs with a total price of " + pprice0 + ", " + pname1 + " of " + pquantity1 + "kgs with a total price of " + pprice1 + ", " + pname2 + " of " + pquantity2 + "kgs with a total price of " + pprice2 + ", " + pname3 + " of " + pquantity3 + "kgs with a total price of " + pprice3 + ", " + pname4 + " of " + pquantity4 + "kgs with a total price of " + pprice4 + ", " + pname5 + " of " + pquantity5 + "kgs with a total price of " + pprice5 + ", " + pname6 + " of " + pquantity6 + "kgs with a total price of " + pprice6;
+                    }
+  
+                    message = message + "PERSONAL DETAILS:" +" NAME: "+userName+", PHONE NUMBER: "+userPhone+", ADDRESS: "+userAddress + ". I would like to order " + cartItems + " from your store. Can I get it delivered by tomorrow?";
+                  //Send message through WhatsApp API
+                    const whatsappWebLink = `https://api.whatsapp.com/send?phone=+917976391232&text=${message}`;
+                    aWhatsapp.href = whatsappWebLink;
+
+                    //Remove the cart items from the localstorage after the message is sent.
+                    if(localStorage.getItem("Carrot")){
+                      localStorage.removeItem("Carrot");
+                    }
+                    if(localStorage.getItem("Potatoes")){
+                      localStorage.removeItem("Potatoes");
+                    }
+                    if(localStorage.getItem("Peppers")){
+                      localStorage.removeItem("Peppers");
+                    }
+                    if(localStorage.getItem("Bananas")){
+                      localStorage.removeItem("Bananas");
+                    }
+                    if(localStorage.getItem("Cucumbers")){
+                      localStorage.removeItem("Cucumbers");
+                    }
+                    if(localStorage.getItem("Strawberries")){
+                      localStorage.removeItem("Strawberries");
+                    }
+                    if(localStorage.getItem("Bagels")){
+                      localStorage.removeItem("Bagels");
+                    }
+                    if(localStorage.getItem("Bread")){
+                      localStorage.removeItem("Bread");
+                    }
+                    if(localStorage.getItem("Pomogranate")){
+                      localStorage.removeItem("Pomogranate");
+                    }
+                    if(localStorage.getItem("Cheese")){
+                      localStorage.removeItem("Cheese");
+                    }
+                  }
+    </script>
+  </body>
+</html>
+
+
+
+
+
+
+

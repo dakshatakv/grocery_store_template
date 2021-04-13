@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@700&display=swap" rel="stylesheet">
+
+    <title>Shop</title>
+  </head>
+  <body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+              <a class="navbar-brand" href="#">GROCERY</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><i class="fas fa-bars" style="color:black;"></i></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                        <a class="nav-link parent-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link parent-link" href="aboutus.html">About</a>
+                        </li>
+                        <li class="nav-item active">
+                                <a class="nav-link parent-link" href="shop.html">Shop <span class="sr-only">(current)</span></a>
+                        </li>    
+                        <li class="nav-item dropdown">
+                                <a class="nav-link parent-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">More</a>
+                                <div class="dropdown-menu">
+                                <a class="dropdown-item child-link" href="whatweoffer.html">What We Offer</a>
+                                <a class="dropdown-item child-link" href="ourteam.html">Our Team</a>
+                                <a class="dropdown-item child-link" href="testimonials.html">Testimonials</a>
+                        </li>
+                        <li class="nav-item">
+                                <a class="nav-link parent-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item shoppingcart">
+                                <a class="nav-link parent-link" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                        </li>
+                    </ul> 
+          </div>
+        </nav>
+
+        <!-- main starts here -->
+        <main role="main">
+            <section id="shop">
+                <!-- Page Title -->
+                 <h1 id="ourteam-heading" align="center">PRODUCT CATALOG</h1>
+                <div class="row">
+                    <div class="col col-xl-3 col-lg-3 col-md-3 col-sm-12">
+                            <!-- Different categories -->
+                            <div class="category">
+                                <h2>Category</h2>
+                                <hr>
+                                <div class="category-check">
+                                    <div class="checkbox-all">
+                                        <input type="checkbox" id="all-check" checked><label class="check-label" for="all-check"> All(9)</label>
+                                    </div>
+                                    <div class="checkbox-all">
+                                        <input type="checkbox" id="veg-check"><label class="check-label" for="veg-check"> Vegetables(3)</label>
+                                    </div>
+                                    <div class="checkbox-all">
+                                        <input type="checkbox" id="fruit-check"><label class="check-label" for="fruit-check"> Fruits(3)</label>
+                                    </div>
+                                    <div class="checkbox-all">
+                                        <input type="checkbox" id="other-check"><label class="check-label" for="all-check"> Others(3)</label>                                    
+                                    </div>          
+                                </div>
+                            </div>                            
+                    </div>
+                    <div class="col col-xl-9 col-lg-9 col-md-9 col-sm-12">
+                        <!-- Products -->
+                        <div class="row products">
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 veg-product">
+                                <div class="card align-items-center hidden">
+                                    <img class="card-img-top" src="./images/shop/1.png">
+                                    <div class="card-body">
+                                        <h5 align="center" class="card-title">Carrot</h5>
+                                        <p align="center" class="card-text">$17.00</p>
+                                        <a class="btn btn-success btn-md" onclick="addToLocalStorage(this)">Add to cart</a>                                       
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 other-product">
+                                <div class="card align-items-center hidden">
+                                    <img class="card-img-top" src="./images/shop/2.jpeg">
+                                    <div class="card-body">
+                                        <h5 align="center" class="card-title">Cheese</h5>
+                                        <p align="center" class="card-text">$13.00</p>
+                                        <a class="btn btn-success btn-md" onclick="addToLocalStorage(this)">Add to cart</a>                                          
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 fruit-product">
+                                <div class="card align-items-center hidden">
+                                    <img class="card-img-top" src="./images/shop/3.jpg">
+                                    <div class="card-body">
+                                        <h5 align="center" class="card-title">Pomogranate</h5>
+                                        <p align="center" class="card-text">$14.00</p>
+                                        <a class="btn btn-success btn-md" onclick="addToLocalStorage(this)">Add to cart</a>                               
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 other-product">
+                                <div class="card align-items-center hidden">
+                                    <img class="card-img-top" src="./images/shop/4.png">
+                                    <div class="card-body">
+                                        <h5 align="center" class="card-title">Bagels</h5>
+                                        <p align="center" class="card-text">$23.00</p>
+                                        <a class="btn btn-success btn-md" onclick="addToLocalStorage(this)">Add to cart</a>                                           
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 veg-product">
+                                <div class="card align-items-center hidden">
+                                    <img class="card-img-top" src="./images/shop/5.png">
+                                    <div class="card-body">
+                                        <h5 align="center" class="card-title">Cucumbers</h5>
+                                        <p align="center" class="card-text">$22.00</p>
+                                        <a class="btn btn-success btn-md" onclick="addToLocalStorage(this)">Add to cart</a>                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 fruit-product">
+                                <div class="card align-items-center hidden">
+                                    <img class="card-img-top" src="./images/shop/6.png">
+                                    <div class="card-body">
+                                        <h5 align="center" class="card-title">Strawberries</h5>
+                                        <p align="center" class="card-text">$15.00</p>
+                                        <a class="btn btn-success btn-md" onclick="addToLocalStorage(this)">Add to cart</a>                                       
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 veg-product">
+                                <div class="card align-items-center hidden">
+                                    <img class="card-img-top" src="./images/shop/7.png">
+                                    <div class="card-body">
+                                        <h5 align="center" class="card-title">Peppers</h5>
+                                        <p align="center" class="card-text">$10.00</p>
+                                        <a class="btn btn-success btn-md" onclick="addToLocalStorage(this)">Add to cart</a>                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 other-product">
+                                <div class="card align-items-center hidden">
+                                    <img class="card-img-top" src="./images/shop/8.png">
+                                    <div class="card-body">
+                                        <h5 align="center" class="card-title">Bread</h5>
+                                        <p align="center" class="card-text">$11.00</p>
+                                        <a class="btn btn-success btn-md" onclick="addToLocalStorage(this)">Add to cart</a>                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 fruit-product">
+                                <div class="card align-items-center hidden">
+                                    <img class="card-img-top" src="./images/shop/9.png">
+                                    <div class="card-body">
+                                        <h5 align="center" class="card-title">Bananas</h5>
+                                        <p align="center" class="card-text">$11.00</p>
+                                        <a class="btn btn-success btn-md" onclick="addToLocalStorage(this)">Add to cart</a>                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        <!-- Our partners -->
+            <section id="partners">
+                <h2 align="center">OUR PARTNERS</h2>
+                <div class="container"> 
+                    <div class="row">         
+                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 hidden">
+                            <img class="img-fluid" src="./images/partners/1.png">
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 hidden">
+                            <img class="img-fluid" src="./images/partners/2.png">
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 hidden">
+                            <img class="img-fluid" src="./images/partners/3.png">
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 hidden">
+                            <img class="img-fluid" src="./images/partners/4.png">
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 hidden">
+                            <img class="img-fluid" src="./images/partners/5.png">
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 hidden">
+                            <img class="img-fluid" src="./images/partners/6.png">
+                        </div>
+                    </div>
+                </div>
+            </section>               
+        </main>
+        <!-- main ends here -->
+
+         <!-- Footer -->
+        <footer class="footer">
+          <div class="footer-container">
+            <div>
+              <span class="text-muted">&copy E-Store 2020</span>
+            </div>
+            <div class="social-media text"> Follow us @ -
+                <a href="#"><i class="fab fa-twitter"></i></a>   
+                <a href="#"><i class="fab fa-instagram"></i></a>   
+                <a href="#"><i class="fab fa-linkedin"></i></a> 
+            </div>
+            <div>
+              <p class="text-muted"> Store Address:</p>
+              <span class="text-muted">123 Bootstrap Lane, Mumbai, MH - 412345 India</span>
+              <p class="text-muted">Contact - +91 99999 99999 </p>
+            </div>
+          </div>
+        </footer>
+ 
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script>
+    	
+        (function() {
+                    var elements;
+                    var windowHeight;
+
+                    // functions for animations
+                    function init() {
+                        elements = document.querySelectorAll('.hidden');
+                        windowHeight = window.innerHeight;
+                    }
+
+                    function checkPosition() {
+                        for (var i = 0; i < elements.length; i++) {
+                        var element = elements[i];
+                        var positionFromTop = elements[i].getBoundingClientRect().top;
+
+                        if (positionFromTop - windowHeight <= 0) {
+                            element.classList.add('fade-in-element');       
+                            element.classList.remove('hidden');                
+                        }
+                        }
+                    }
+                    window.addEventListener('scroll', checkPosition);
+                    window.addEventListener('resize', init);
+
+                    init();
+                    checkPosition();
+                    }
+                    )();
+                    
+                    /*Shop page functionality*/
+                    const otherElements = document.querySelectorAll(".other-product");
+                    const fruitElements = document.querySelectorAll(".fruit-product");
+                    const vegElements = document.querySelectorAll(".veg-product");  
+                    const allCheck = document.getElementById('all-check');
+                    const vegCheck = document.getElementById('veg-check');
+                    const otherCheck = document.getElementById('other-check');
+                    const fruitCheck = document.getElementById('fruit-check');
+
+                    //For veg check box
+                    vegCheck.addEventListener('change', (event) => {
+                        if (event.target.checked) {
+                                                                             
+                             for (var i = 0; i < otherElements.length; i++) {
+                                otherElements[i].style.display = "none"
+                             } 
+                             for (var i = 0; i < fruitElements.length; i++) {
+                                fruitElements[i].style.display = "none"
+                             } 
+                             for (var i = 0; i < vegElements.length; i++) {
+                                vegElements[i].style.display = "block"
+                             } 
+                        }                     
+                        allCheck.checked = false;
+                        fruitCheck.checked = false;
+                        otherCheck.checked = false;
+                    })
+                    //For fruit check box
+                    fruitCheck.addEventListener('change', (event) => {
+                        if (event.target.checked) {                           
+                             for (var i = 0; i < otherElements.length; i++) {
+                                otherElements[i].style.display = "none"
+                             } 
+                             for (var i = 0; i < vegElements.length; i++) {
+                                vegElements[i].style.display = "none"
+                             }  
+                             for (var i = 0; i < fruitElements.length; i++) {
+                                fruitElements[i].style.display = "block"
+                             }  
+                        }                      
+                        allCheck.checked = false;
+                        vegCheck.checked = false;
+                        otherCheck.checked = false;
+                    })
+                    //For other check box
+                    otherCheck.addEventListener('change', (event) => {
+                        if (event.target.checked) {                          
+                            for (var i = 0; i < otherElements.length; i++) {
+                                otherElements[i].style.display = "block"
+                             }                      
+                             for (var i = 0; i < vegElements.length; i++) {
+                                vegElements[i].style.display = "none"
+                             } 
+                             for (var i = 0; i < fruitElements.length; i++) {
+                                fruitElements[i].style.display = "none"
+                             }                           
+
+                        }                    
+                        allCheck.checked = false;
+                        fruitCheck.checked = false;
+                        vegCheck.checked = false;
+                    })
+                    //For all check box
+                    allCheck.addEventListener('change', (event) => {
+                        if (event.target.checked) {                        
+                                                    
+                             for (var i = 0; i < otherElements.length; i++) {
+                                otherElements[i].style.display = "block"
+                             } 
+                             for (var i = 0; i < fruitElements.length; i++) {
+                                fruitElements[i].style.display = "block"
+                             }  
+                              for (var i = 0; i < vegElements.length; i++) {
+                                vegElements[i].style.display = "block"
+                             }  
+                        }                      
+                        vegCheck.checked = false;
+                        fruitCheck.checked = false;
+                        otherCheck.checked = false;
+                    })
+
+                     //For adding to the local storage
+                    function addToLocalStorage(elem){
+                        let itemName = elem.parentNode.querySelector(".card-title").textContent;
+                        let itemPrice = elem.parentNode.querySelector(".card-text").textContent;
+                        //Add item to the local storage
+                    localStorage.setItem(itemName,itemPrice);                        
+                    }
+	</script>
+  </body>
+</html>
+    
